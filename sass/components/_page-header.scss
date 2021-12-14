@@ -1,0 +1,114 @@
+.header{
+    position: relative;
+    border-bottom: 1px solid #ECECEC;
+    
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+
+}
+
+// placeholder***************************
+%link-text{
+    position: relative;
+    display: block;
+   
+    font-family: $font-base;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $cubic;
+}
+// *****************************************
+
+.header-nav{
+    display: none;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px){
+        display: block;
+    }
+    @media screen and (min-width: 1200px){
+        margin-left: 93px;
+    }
+
+
+    &__items{
+        display: flex;
+    }
+
+    &__item{
+        margin-right: 50px;
+    }
+    &__item:last-child{
+        margin-right: 0;
+    }
+
+    &__link{
+        @extend %link-text;
+        padding: 22px 0;
+
+        color: $color-content-first;
+
+    &:focus,
+    &:hover{
+        color: $color-hover;
+    }}
+}
+  
+
+.header-contact{
+    display: none; 
+    margin-left: auto;
+
+    @media screen and (min-width: 768px){
+        display: block;
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
+
+    &__item:first-child{
+        @media screen and (min-width: 1200px){
+            margin-right: 30px;
+        }
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        
+        @extend %link-text;
+        
+        font-size: 14px;
+        color: $color-content;
+    
+    &:focus,
+    &:hover{
+        color: $color-hover;
+    }}
+
+    &__icon{
+        margin-right: 10px;
+        --color5:currentcolor;
+        --color3:currentcolor;
+    }
+
+}
+.header-nav--underline::after{
+    position: absolute;
+    bottom: -10px;
+
+     content:"";
+     display: block;
+     height: 4px;
+     width: 100%;
+     border-radius: 2px;
+     background-color: $color-hover;
+
+}

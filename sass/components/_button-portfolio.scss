@@ -1,0 +1,47 @@
+.portfolio-naw{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+
+        margin-top: -8px;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 768px){
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        @media screen and (min-width: 1200px){
+            margin-bottom: 50px;
+            justify-content: center;
+        }
+
+        
+    &__button{
+    margin: 8px 8px 0 0 ;
+    padding: 6px 22px;
+
+    border-radius: 4px;
+    border:0;
+
+    transition: box-shadow 250ms $cubic,
+    background-color 250ms $cubic,
+    color 250ms $cubic;
+    
+    font-family: $font-base;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $color-content-first;
+    background-color: $color-fon;
+    
+}
+
+&__button:hover,
+&__button:focus{
+    color: $bg-color-body;
+    background-color: $color-hover;
+}
+}

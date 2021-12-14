@@ -1,0 +1,64 @@
+.hero{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 118px 0;
+
+    background: #2F303A66;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-image:linear-gradient(to right, #2F303A66, #2F303A66),
+   url("../../images/fon1-1x.jpg");
+
+   @media   (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image:linear-gradient(to right, #2F303A66, #2F303A66),url("../../images/fon1-2x.jpg");
+            }
+
+    @media screen and (min-width: 768px){
+        background-image:linear-gradient(to right, #2F303A66, #2F303A66),url("../../images/fon2-2x.jpg");
+
+        @media   (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image:linear-gradient(to right, #2F303A66, #2F303A66),url("../../images/fon2-2x.jpg");
+            }
+    }        
+
+    
+
+    @media screen and (min-width: 1200px){
+        padding: 200px 0;
+    }
+
+    &__container{
+        margin: 0 auto;
+        max-width: 452px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px){
+            max-width: 696px;
+        }
+    }  
+
+    &__title{
+        margin-bottom: 30px;
+    
+        font-family: $font-base;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6;
+        color: $bg-color-body;
+        letter-spacing: 0.06em;
+        
+        text-align: center;
+
+        @media screen and (min-width: 1200px){
+            font-size: 44px;
+            line-height: 1.36;
+        }
+        
+    }    
+    }

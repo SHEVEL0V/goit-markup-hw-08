@@ -1,0 +1,93 @@
+.team{
+    padding: 60px 0;
+    background-color:$color-fon ;
+    @media screen and (min-width: 768px){
+        padding: 94px 0;
+    }
+
+    &__title{
+        margin-bottom: 30px;
+
+        font-family: $font-base;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: $color-content-first;
+
+        @media screen and (min-width: 1200px){
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 1.16;
+        }
+    }
+
+    &__items{
+        margin: -15px;
+        @media screen and (min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+
+    &__item{
+        margin: 15px;
+
+        @media screen and (min-width: 768px){
+            width: calc((100% - 2 * 30px) / 2);
+        }
+        @media screen and (min-width: 1200px){
+            width: calc((100% - 4 * 30px) / 4) 
+        }
+    }
+
+
+
+    &__wrapper{
+        padding: 30px 0 24px 0;
+    
+        background-color: $bg-color-body;
+    
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+         0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+        @media screen and (min-width: 1200px){
+            padding: 30px 0 30px 0;
+        }
+    }
+    
+    
+    &__img{
+        display: block;
+        width: 100%;
+    }
+    &__name{
+        margin-bottom: 10px;
+        font-family: $font-base;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em  ;
+
+        color: $color-content-first;
+    }
+    &__profession{
+        margin-bottom: 16px;
+
+        font-family: $font-base;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: $color-content;
+    }
+
+}

@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+
+    background-color: $bg-color-body ;
+    color: $color-content;
+    font-family: Roboto , arial ;
+    
+}
+    h1,h2,h3,ul,p
+     {margin: 0;}
+
+    ul{ list-style: none;
+        padding-inline-start: 0px}
+
+    a { text-decoration: none;
+        }

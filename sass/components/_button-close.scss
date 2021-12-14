@@ -1,0 +1,25 @@
+.button-close{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    pointer-events: auto;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #0000001A;
+    transition: fill 250ms $cubic;
+    background-color: $bg-color-body;
+
+&:hover,
+&:focus{
+    fill: $color-hover;
+}
+}

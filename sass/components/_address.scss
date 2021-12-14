@@ -1,0 +1,29 @@
+.address{
+    
+    &__item:not(:last-child){
+        margin-bottom: 8px;
+        }
+
+    &__link{
+        display: block;
+
+        font-family: $font-base;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em; 
+        font-style: normal;
+
+        text-align: center;
+
+        @media screen and (min-width: 1200px){
+            text-align: left;
+        }
+        }
+
+    &__link--white{
+        color:#fff;
+    }
+    &__link--grey{
+        color:rgba(255, 255, 255, 0.6)
+    }
+}

@@ -1,0 +1,110 @@
+.modal-form{
+    display:flex;
+    flex-direction: column;
+    padding: 40px;
+
+    %shadow{
+        box-shadow: 0px 2px 1px 0px #00000033;
+        box-shadow: 0px 1px 1px 0px #00000024;
+        box-shadow: 0px 1px 3px 0px #0000001F;
+    }
+
+    &__title{
+        margin-bottom: 30px;
+
+        font-family: $font-base;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        text-align: center;
+
+        color: $color-content-first;
+
+    }
+    &__label{
+        position: relative;
+        margin-bottom: 28px;
+    }
+    &__label-pl{
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    &__input{
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+        padding-left: 30px;
+        
+        transition: border-color 250ms $cubic;
+    
+        border: 1px solid #21212133;
+        border-radius: 4px;
+        
+        @extend %shadow
+    }
+    &__input:hover,
+    &__input:focus,
+    &__input:not(:placeholder-shown){
+        border-color: $color-hover;
+    }
+
+    &__input:hover+&__svg,
+    &__input:focus+&__svg,
+    &__input:not(:placeholder-shown)+&__svg{
+        fill:$color-hover
+    }
+
+
+    &__input-name{
+        position: absolute;
+        left: 0;
+        top:-18px;
+    
+        font-family: $font-base;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+    }
+    &__svg{
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        transition: fill 250ms $cubic;
+    }
+    &__texterea{
+        resize:none;
+
+        width: 100%;
+        min-height: 120px;
+        box-sizing: border-box;
+        padding: 12px 16px;
+    
+        font-family: $font-base;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+    
+        color: #75757580;
+        ;
+        
+        border: 1px solid #21212133;
+        border-radius: 4px;
+        
+        @extend %shadow
+    }
+    &__texterea::placeholder{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+    
+        color: #75757580;
+    }
+    
+}

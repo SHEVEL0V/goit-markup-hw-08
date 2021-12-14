@@ -1,0 +1,49 @@
+.form-checkbox{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px){
+        justify-content: center;
+        
+    }
+
+
+&__input{
+    position: absolute;
+    appearance: none;
+}
+&__svg{
+    margin-right: 8px;
+    box-sizing: border-box;
+    border: 2px solid $color-content-first;
+    border-radius: 2px;
+    background-origin: border-box;
+    transition: border-color 250ms $cubic,background-color 250ms $cubic
+}
+
+&__text{
+    font-family: $font-base;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    color:$color-content ;
+
+    @media screen and (min-width: 1200px){
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+&__text-b{
+    text-decoration: underline;
+    color: $color-hover;
+}
+&__input:checked+&__svg{
+    background-color: $color-hover;
+    border-color: transparent;
+}
+}
+

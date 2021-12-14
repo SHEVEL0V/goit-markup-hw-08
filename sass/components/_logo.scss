@@ -1,0 +1,21 @@
+.logo{
+    display: block;
+    font-family: $font-logo;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: $color-logo;
+
+    &__header{
+        color: $color-logo-header;
+    }
+    &__footer{
+        color: $color-logo-footer;
+    }
+}
+
+.logo--bottom{
+    margin-bottom: 20px;
+}
