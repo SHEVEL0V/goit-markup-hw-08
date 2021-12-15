@@ -60,6 +60,10 @@
 
         color: $color-hover;
 
+        @media screen and ( max-width:380px) {
+            font-size: 24px;
+        }
+
     }
 
     &__mail{
@@ -79,6 +83,9 @@
     
     &__item{
         position: relative;
+        @media screen and ( max-width:437px){
+            margin-top: 10px;
+        }
     }
     &__item:not(:first-child){
         margin-left: 20px;

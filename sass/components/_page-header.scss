@@ -84,9 +84,11 @@
         padding: 5px 0;
         
         @extend %link-text;
-        
-        font-size: 14px;
         color: $color-content;
+        @media screen and (max-width: 1200px){
+            font-size: 12px;
+        }
+
     
     &:focus,
     &:hover{
