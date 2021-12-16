@@ -329,8 +329,14 @@ a {
   color: #fff;
 }
 
-.logo--bottom {
+.logo--bottom-left {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo--bottom-left {
+    text-align: left;
+  }
 }
 
 .header {
@@ -504,7 +510,7 @@ a {
 
 .hero__container {
   margin: 0 auto;
-  max-width: 452px;
+  max-width: 360px;
   text-align: center;
 }
 
@@ -579,20 +585,34 @@ a {
   display: none;
 }
 
+.quality__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: -15px;
+}
+
 @media screen and (min-width: 768px) {
   .quality__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
   }
+}
+
+.quality__item {
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .quality__item {
-    margin: 15px;
     width: calc((100% - 2 * 30px) / 2);
   }
 }
@@ -631,6 +651,12 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .quality__title {
+    text-align: left;
+  }
 }
 
 .quality__desc {
@@ -706,7 +732,7 @@ a {
   background-color: #F5F4FA;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team {
     padding: 94px 0;
   }
@@ -733,13 +759,21 @@ a {
 
 .team__items {
   margin: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
   .team__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -778,6 +812,7 @@ a {
 .team__img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .team__name {
