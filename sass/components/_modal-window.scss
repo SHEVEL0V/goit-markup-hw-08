@@ -2,7 +2,8 @@
     position: relative;
     pointer-events: auto;
 
-    margin: 0 auto;
+    z-index: 12;
+    margin: auto auto;
 
     box-sizing: border-box;
     max-width: 450px;
@@ -14,7 +15,7 @@
     box-shadow: 0px 1px 1px 0px #00000024;
     box-shadow: 0px 1px 3px 0px #0000001F;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 480px){
     position: absolute;
     top: 50%;
     left: 50%;
